@@ -216,18 +216,20 @@
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <button id="none" class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
-    </button>
+    </button> -->
   </div>
  
   <style>
       @media screen and (orientation: landscape) {
+        
+        
   .carousel img {
     height: 100vh;
     border-radius: 19px;
@@ -235,6 +237,7 @@
   button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
     cursor: pointer;
     display: none;
+    height: 10px !important;
 }
 .carousel-item.active, .carousel-item-next, .carousel-item-prev {
     display: block;
@@ -381,6 +384,7 @@
         }
         .detail-box{
             color:#00204a;
+            padding: 19px;
         }
         .info_section form button {
     background-color: #ffd54f !important;
@@ -395,7 +399,7 @@
       
 button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
     cursor: pointer;
-    display: none;
+    /* display: none; */
 }
 .custom_nav-container .navbar-toggler {
     padding: 0;
@@ -405,6 +409,8 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
     transition: all 0.3s;
     background-color: re;
     background-color: rgb(0, 20, 87);
+    padding-left: 10px;
+    padding-right: 43px;
 }
      
 }
@@ -796,6 +802,9 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
        
     
   <style>
+      .overview-inner1 {
+    height: 203px;
+}
       * {
   padding: 0;
   margin: 0;
@@ -841,10 +850,50 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 .overview-count-wrapper .overview-count-list {
   width: 13.375rem;
 }
-
+@media (max-width: 420px) {
+    .service_section .box .img-box {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+}
 @media only screen and (max-width: 600px) {
     .overview-count-wrapper .overview-count-list {
   width: 9.375rem;
+}
+
+.overview-inner1 {
+    background-color: #00204a;
+    color: #fff;
+    padding: 20 px 0;
+    height: 100%;
+}
+.item {
+    height: 319px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 320px;
+    max-width: 410px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.overview-count-list .count-wrapper .number-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.overview-count-list .count-wrapper .number-wrapper {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    position: relative;
+    right: 11px;
 }
 }
 
