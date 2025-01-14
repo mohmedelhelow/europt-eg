@@ -216,7 +216,7 @@
         </div>
       </div>
     </div> -->
-    <div class='image-background'>
+    <!-- <div class='image-background'>
         <div class='container h-100'>
           <div class='row h-100 align-items-center'>
             <div class='col-12 text-center'>
@@ -249,6 +249,65 @@
 }
 
 
+      </style> -->
+      <div id="videoWrapper">
+        <video poster="./images/EuroPTMobileVersion.mp4" playsinline autoplay muted loop>
+          <source src="./images/EuroPTMobileVersion.mp4" type="video/mp4">
+        </video>
+        <div class="caption">
+          <div class="contents">
+            <h2>EURO PT </h2>
+            <p>EURO PT has built a strong, trusted brand with immense support from loyal and faithful customers, and today; EURO PT is widely recognized as one of the leading PT applicators in EGYPT.
+          </p>
+          </div>
+        </div>
+      
+      </div>
+      <style>
+      
+      HTML CSSResult Skip Results Iframe
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      
+      #videoWrapper {
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        border-radius: 40px;
+      }
+      
+      #videoWrapper video {
+        position: absolute;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: cover; 
+        z-index: -100;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+      
+      #videoWrapper .caption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+      }
+      
+      #videoWrapper .caption .contents {
+        width:50%;
+        color: #fff;
+        text-align: center;
+        padding: 2rem;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 20px;
+      }
       </style>
     <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
